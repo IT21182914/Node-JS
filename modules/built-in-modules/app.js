@@ -1,9 +1,23 @@
-const os = require("os");
+const path = require("path");
 
-// info about current user
-const user = os.userInfo();
+console.log(path.sep);
 
-console.log(user);
+const filePath = path.join(
+  "/modules",
+  "module-alternative",
+  "alternative-flavor.js"
+);
 
-// method returns the system uptime in seconds
-console.log(`The System Uptime is ${os.uptime()} seconds`);
+console.log(filePath);
+
+const base = path.basename(filePath);
+console.log(base);
+
+const absolute = path.resolve(
+  __dirname,
+  "modules",
+  "module-alternative",
+  "alternative-flavor.js"
+);
+
+console.log(absolute);
