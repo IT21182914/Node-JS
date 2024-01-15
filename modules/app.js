@@ -1,7 +1,18 @@
-const _ = require("lodash");
+const { readFile } = require("fs");
 
-const items = [1, [2, [3, [4]]]];
+console.log("start first task");
 
-const newItems = _.flattenDeep(items);
-
-console.log(newItems);
+// CHECK FILE PATH!!!!
+readFile(
+  "./modules/built-in-modules/content/first.txt",
+  "utf8",
+  (err, result) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log(result);
+    console.log("completed first task");
+  }
+);
+console.log("starting next task");
