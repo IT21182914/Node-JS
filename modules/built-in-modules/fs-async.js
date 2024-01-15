@@ -41,3 +41,22 @@ readFile(
 console.log("Starting next task");
 
 // In this program, the JavaScript runtime in Node.js operates asynchronously. The readFile and writeFile functions from the "fs" module are asynchronous operations, meaning they don't block the execution of the rest of the code. Instead, they operate in the background, and their callbacks are executed once the operations are completed.
+
+/* ********************************************************************** */
+//example asynchronous function
+
+// console.log("Start");
+
+// // Asynchronous operation
+// setTimeout(() => {
+//   console.log("Async operation completed");
+// }, 2000);
+
+// console.log("Continue with other tasks");
+
+// Output:
+// Start
+// Continue with other tasks
+// Async operation completed (after approximately 2 seconds)
+
+/* ********************************************************************** */
