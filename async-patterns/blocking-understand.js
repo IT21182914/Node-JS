@@ -11,7 +11,11 @@ const server = http.createServer((req, res) => {
       }
     }
 
-    //with this for loop we can understand that asynchronus code is better than blocking code
+    //with this for loop we can understand that asynchronus code is better than blocking code.
+    //because blocking code will block the execution of the code until the loop is finished.
+    //not only that, it will also block the execution of other code in the application.
+    //that means not only about page, but also home page also will be blocked.
+    //so, if we want to do something like this, we should use asynchronous code.
     res.end("About Page");
   }
   res.end("Error Page");
