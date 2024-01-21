@@ -10,7 +10,7 @@ app.use(express.static("./public"));
 
 /* 
 
-**************
+***************
 
 without below code, we can't access the html file in the public folder.............
 
