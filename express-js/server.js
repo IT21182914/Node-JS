@@ -6,4 +6,4 @@ const server = http.createServer((req, res) => {
   console.log("user hit the server");
 });
 
-server.listen(5000);
+server.listen(5000); //if we think about bank, we have different numbers for different things.like press number 1 for balance, press number 2 for transfer money etc. here 5000 is the number for our server.
