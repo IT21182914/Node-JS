@@ -1,6 +1,6 @@
 const express = require("express");
-const people = require("./controllers/peopleRoutes");
-const auth = require("./controllers/authRoutes");
+const people = require("./peopleRoutes");
+const auth = require("./authRoutes");
 
 const app = express();
 const PORT = 8080;
