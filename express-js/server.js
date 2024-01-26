@@ -39,4 +39,12 @@ app.post("/login", (req, res) => {
   res.status(401).send("Please Provide Credentials");
 });
 
+app.put("/api/people/:id", (req, res) => {
+  const { id } = req.params;
+  const { name } = req.body;
+
+  console.log(id, name);
+  res.send("hello world");
+});
+
 app.listen(PORT, () => console.log(`\nServer is running on port ${PORT} 🔥`));
